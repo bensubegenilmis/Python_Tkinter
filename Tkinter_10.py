@@ -60,7 +60,11 @@ def callback(event):  #Bu kod parçası, bir olay (event) gerçekleştiğinde (f
     item = agac_yapisi.identify("item", event.x, event.y)
     print(item)
 
-agac_yapisi.bind("<Double-1>",callback)
+agac_yapisi.bind("<Double-1>",callback) 
+
+#bind yöntemi kullanılarak belirli bir olaya (event) belirli bir işlevin (callback) atanması sağlanır.
+
+#"<Double-1>" ifadesi, fare ile çift tıklama olayını temsil eder. Yani, kullanıcı ağaç görünüm bileşeninde bir öğeye çift tıkladığında bu olay tetiklenir.
 
 
 pencere.mainloop()
